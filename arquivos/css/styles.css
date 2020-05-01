@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: Impact;
+    height: 2000px;
+
+}
+
+.header{
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.menu img{
+    padding: 5px 0;
+}
+.menu ul{
+    text-align: right;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 0;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #e9e2e2;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    transition: all .3s ease-in-out ;
+}
+.menu ul li a:hover{
+    color: #fff;
+}
+@media (max-width: 739px) {
+    .menu img{
+        display: block;
+        margin: 0 auto;
+    }
+    .menu ul{
+        text-align: center;
+    }
+    .menu ul li{
+        padding: 5px;
+    }
+	.menu ul li a{
+        font-size: 15px;
+    }
+}
+/*INTRO*/
+
+.intro{
+    background-image: url(../img/lobo-intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 74px;
+}
+
+.intro-txt{
+    color: #e9e2e2;
+    text-align: center;
+    padding: 170px 0;
+}
+.intro-txt h1{
+    font-size: 100px;
+    letter-spacing: 5px;
+}
+.intro-txt p{
+    font-size: 20px;
+}
+
+.intro-txt p::before, .intro-txt p::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #e9e2e2;
+    margin: 5px auto;
+}
+
+/*HISTORIA*/
+#historia{
+    padding: 100px 0;
+}
+
+.titulo{
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #262626;
+}
+
+.his-texto{
+    position: relative;
+    height: 531px;
+}
+
+.his-texto::before, .his-texto::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background-color: #262626;
+    margin: auto;
+}
+
+.his-texto p{
+    font-size: 24px;
+    color: #262626;
+    padding-top: 55px;
+    height: 100%;
+    text-align: justify;
+    text-indent: 50px;
+}
+@media (max-width: 739px) {
+    .his-texto{
+        height: auto;
+    }
+    .his-texto p{
+        margin-bottom: 40px;
+    }
+    .his-texto::before{
+        margin-top: 30px;
+    }
+}
+/*ESPECIES*/
+.especies{
+    padding: 100px 0;
+    background-color: #262626;
+}
+
+.especies .titulo{
+    color: #e9e2e2;
+}
+
+.esp-item{
+    border: 5px solid #e9e2e2;
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.esp-item .grid-5{
+    padding: 0;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.esp-item .grid-5:nth-child(2){
+    padding: 0;
+    padding-left: 20px;
+    margin-right: -10px;
+}
+
+.esp-desc{
+    padding: 20px;
+    color: #e9e2e2;
+}
+.esp-desc h1{
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.esp-desc p{
+    font-size: 24px;
+    text-align: justify;
+    text-indent: 50px;
+    margin-top: 20px;
+}
+@media (max-width: 739px) {
+
+}
+#curiosidades{
+    padding: 100px 0;
+}
+
+.curi-esq p, .curi-dir p{
+    font-size: 24px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.curi-esq{
+    background-color: #e9e2e2;
+    padding: 20px;
+    color: #262626;
+}
+
+.curi-dir{
+    background-color: #262626;
+    color: #e9e2e2;
+    padding: 20px;
+}
+
+.footer{
+    background-color: #262626;
+    color: #e9e2e2;
+}
+
+.footer p{
+    padding: 15px 0;
+    text-align: center;
+    font-size: 20px;
+}
